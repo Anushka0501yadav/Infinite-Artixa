@@ -1,2 +1,2 @@
-# Infinte-Artixa
+# Infinite-Artixa
 Author- Anushka Yadav
