@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Infinite-Artixa</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#0d0d0d,#2d2d2d,#444);
+        }
+
+        .container{
+            width:900px;
+            max-width:95%;
+            display:flex;
+            background:#1b1b1b;
+            border-radius:18px;
+            overflow:hidden;
+            box-shadow:0 15px 40px rgba(0,0,0,.6);
+        }
+
+        /* Left Side */
+
+        .left{
+            width:45%;
+            background:linear-gradient(160deg,#222,#111);
+            color:white;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            padding:40px;
+            text-align:center;
+        }
+
+        .left h1{
+            font-size:34px;
+            margin-bottom:15px;
+        }
+
+        .left p{
+            color:#cfcfcf;
+            line-height:1.7;
+        }
+
+        /* Right Side */
+
+        .right{
+            width:55%;
+            background:#fff;
+            padding:45px;
+        }
+
+        .right h2{
+            text-align:center;
+            margin-bottom:25px;
+            color:#111;
+        }
+
+        .input-box{
+            position:relative;
+            margin-bottom:18px;
+        }
+
+        .input-box input{
+            width:100%;
+            padding:14px 45px 14px 15px;
+            border:1px solid #ccc;
+            border-radius:8px;
+            font-size:15px;
+            outline:none;
+            transition:.3s;
+        }
+
+        .input-box input:focus{
+            border-color:#555;
+        }
+
+        .input-box i{
+            position:absolute;
+            right:15px;
+            top:50%;
+            transform:translateY(-50%);
+            color:#666;
+        }
+
+        .password-toggle{
+            cursor:pointer;
+        }
+
+        button{
+            width:100%;
+            padding:14px;
+            border:none;
+            border-radius:8px;
+            background:#111;
+            color:white;
+            font-size:17px;
+            cursor:pointer;
+            transition:.3s;
+            margin-top:10px;
+        }
+
+        button:hover{
+            background:#444;
+        }
+
+        .login-link{
+            margin-top:20px;
+            text-align:center;
+            color:#555;
+        }
+
+        .login-link a{
+            color:#000;
+            text-decoration:none;
+            font-weight:600;
+        }
+
+        .login-link a:hover{
+            color:#666;
+        }
+
+        @media(max-width:768px){
+
+            .container{
+                flex-direction:column;
+            }
+
+            .left,.right{
+                width:100%;
+            }
+
+            .left{
+                padding:30px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Section -->
+
+    <div class="left">
+
+        <h1>Infinite-Artixa</h1>
+
+        <p>
+            Join our creative community and showcase your
+            clothing paintings, embroidery, DIY fashion,
+            and AI-powered designs.
+        </p>
+
+    </div>
+
+    <!-- Right Section -->
+
+    <div class="right">
+
+        <h2>Create Account</h2>
+
+        <form>
+
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="email" placeholder="Email Address" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class="fa-solid fa-eye password-toggle" onclick="togglePassword('password',this)"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <i class="fa-solid fa-eye password-toggle" onclick="togglePassword('confirmPassword',this)"></i>
+            </div>
+
+            <button type="submit">
+                Create Account
+            </button>
+
+            <div class="login-link">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script>
+
+function togglePassword(id,icon){
+
+    const input=document.getElementById(id);
+
+    if(input.type==="password"){
+        input.type="text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+    }
+    else{
+        input.type="password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+    }
+
+}
+
+</script>
+
+</body>
+</html>
