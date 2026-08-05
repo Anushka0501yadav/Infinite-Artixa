@@ -143,9 +143,10 @@ header{
    HERO SECTION
 ========================== */
 
+/* HERO SECTION */
 .hero{
-
-    height:100vh;
+    min-height:100svh; /* better for mobile */
+    padding:200px 20px 120px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -160,19 +161,18 @@ header{
 }
 
 .hero-content{
-
-    width:70%;
+    width:100%;
+    max-width:700px;
 }
 
 .hero-content h1{
-
-    font-size:60px;
+    font-size:clamp(32px, 6vw, 60px);
     margin-bottom:25px;
     color:white;
+    line-height:1.2;
 }
 
 .hero-content p{
-
     font-size:18px;
     line-height:1.8;
     color:#d3d3d3;
@@ -306,21 +306,19 @@ gap:20px;
 
 .hero-content{
 
-width:90%;
+width:100%;
 }
 
 .hero-content h1{
 
-font-size:42px;
+font-size:32px;
 }
 
 }
+@media(max-width:576px){
+    .hero-content h1{
+        font-size:28px;
 
-@media(max-width:768px){
-
-.hero-content h1{
-
-font-size:34px;
 }
 
 .hero-content p{
