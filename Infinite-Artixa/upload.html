@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Artwork | Infinite-Artixa</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/upload.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="Infinite-Artixa Logo">
+
+                <div class="logo-text">
+                    <h2>Infinite-Artixa</h2>
+                    <p>Where Creativity Meets Fashion</p>
+                </div>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore.html">Explore</a></li>
+               
+                <li><a href="upload.html" class="active">Upload</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= UPLOAD SECTION ================= -->
+
+    <main class="upload-page">
+
+        <div class="upload-container">
+
+            <div class="upload-heading">
+                <span>SHARE YOUR CREATIVITY</span>
+
+                <h1>Upload Your <span>Artwork</span></h1>
+
+                <p>
+                    Share your clothing designs, painting ideas,
+                    embroidery, and creative fashion artwork
+                    with the Infinite-Artixa community.
+                </p>
+            </div>
+
+
+            <!-- Upload Form -->
+
+            <form id="uploadForm" class="upload-form">
+
+                <!-- Artwork Image -->
+
+                <div class="form-group">
+
+                    <label for="artworkImage">
+                        <i class="fa-solid fa-image"></i>
+                        Upload Artwork Picture
+                    </label>
+
+                    <div class="upload-box">
+
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                        <h3>Choose Your Artwork</h3>
+
+                        <p>PNG, JPG, or JPEG | Maximum 5 MB</p>
+
+                        <input type="file"
+                            id="artworkImage"
+                            name="artworkImage"
+                            accept="image/png, image/jpeg, image/jpg"
+                            required>
+
+                        <p id="fileName"></p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Artwork Name -->
+
+                <div class="form-group">
+
+                    <label for="artworkName">
+                        <i class="fa-solid fa-pen"></i>
+                        Artwork Name
+                    </label>
+
+                    <input type="text"
+                        id="artworkName"
+                        name="artworkName"
+                        placeholder="Enter artwork name"
+                        required>
+
+                </div>
+
+
+                <!-- Category -->
+
+                <div class="form-group">
+
+                    <label for="category">
+                        <i class="fa-solid fa-layer-group"></i>
+                        Select Category
+                    </label>
+
+                    <select id="category" name="category" required>
+
+                        <option value="">Choose a category</option>
+
+                        <option value="clothing">Clothing</option>
+                        <option value="painting">Painting</option>
+                        <option value="embroidery">Embroidery</option>
+                        <option value="mirror-work">Mirror Work</option>
+                        <option value="fabric-art">Fabric Art</option>
+                        <option value="traditional-art">Traditional Art</option>
+                        <option value="modern-fashion">Modern Fashion</option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Description -->
+
+                <div class="form-group">
+
+                    <label for="description">
+                        <i class="fa-solid fa-align-left"></i>
+                        Artwork Description
+                    </label>
+
+                    <textarea id="description"
+                        name="description"
+                        rows="5"
+                        placeholder="Describe your clothing design or artwork idea..."
+                        required></textarea>
+
+                </div>
+
+
+                <!-- Artist Name -->
+
+                <div class="form-group">
+
+                    <label for="artistName">
+                        <i class="fa-solid fa-user"></i>
+                        Artist Name
+                    </label>
+
+                    <input type="text"
+                        id="artistName"
+                        name="artistName"
+                        placeholder="Enter your name"
+                        required>
+
+                </div>
+
+
+                <!-- Submit Button -->
+
+                <button type="submit" class="upload-btn">
+
+                    <i class="fa-solid fa-upload"></i>
+                    Upload Artwork
+
+                </button>
+
+                <p id="uploadMessage"></p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>Infinite-Artixa</h3>
+
+        <p>Where Creativity Meets Fashion</p>
+
+        <p>© 2026 Infinite-Artixa. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/upload.js"></script>
+
+</body>
+
+</html>
