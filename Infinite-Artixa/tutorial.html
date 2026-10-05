@@ -1,0 +1,688 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tutorials | Infinite-Artixa</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Tutorial CSS -->
+    <link rel="stylesheet" href="css/tutorial.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo-section">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Infinite-Artixa Logo">
+            </a>
+
+            <span>Infinite-Artixa</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="tutorial.html" class="active">Tutorials</a>
+            <a href="#">About</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="register.html" class="register-btn">Register</a>
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="tutorial-hero">
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                <i class="fa-solid fa-graduation-cap"></i>
+                Learn • Create • Share
+            </span>
+
+            <h1>
+                Learn, Create &amp;
+                <span>Share Your Art</span>
+            </h1>
+
+            <p>
+                Explore creative tutorials, learn new artistic techniques,
+                and share your own artwork with the Infinite-Artixa community.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TUTORIAL CATEGORIES ================= -->
+
+    <section class="categories-section">
+
+        <div class="section-heading">
+            <span>EXPLORE</span>
+            <h2>Tutorial Categories</h2>
+            <p>Choose a category and start creating something beautiful.</p>
+        </div>
+
+        <div class="category-container">
+
+            <button class="category-btn active" data-category="all">
+                <i class="fa-solid fa-layer-group"></i>
+                All
+            </button>
+
+            <button class="category-btn" data-category="clothing">
+                <i class="fa-solid fa-shirt"></i>
+                Clothing Design
+            </button>
+
+            <button class="category-btn" data-category="painting">
+                <i class="fa-solid fa-palette"></i>
+                Painting
+            </button>
+
+            <button class="category-btn" data-category="embroidery">
+                <i class="fa-solid fa-scissors"></i>
+                Embroidery
+            </button>
+
+            <button class="category-btn" data-category="mirror">
+                <i class="fa-regular fa-gem"></i>
+                Mirror Work
+            </button>
+
+            <button class="category-btn" data-category="fabric">
+                <i class="fa-solid fa-shirt"></i>
+                Fabric Art
+            </button>
+
+            <button class="category-btn" data-category="fashion">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                Fashion DIY
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TUTORIAL CARDS ================= -->
+
+    <section class="tutorial-section">
+
+        <div class="section-heading">
+
+            <span>LEARN SOMETHING NEW</span>
+
+            <h2>Creative Tutorials</h2>
+
+            <p>
+                Step-by-step tutorials to help you improve your creativity
+                and develop your own artistic style.
+            </p>
+
+        </div>
+
+
+        <div class="tutorial-grid">
+
+
+            <!-- Tutorial 1 -->
+
+            <div class="tutorial-card" data-category="clothing">
+
+                <div class="tutorial-image">
+                    <img src="images/art/clothing-tutorial.jpg"
+                         alt="Clothing Design Tutorial">
+
+                    <span class="difficulty beginner">
+                        Beginner
+                    </span>
+                </div>
+
+                <div class="tutorial-content">
+
+                    <span class="tutorial-category">
+                        Clothing Design
+                    </span>
+
+                    <h3>Hand-Painted Clothing Design</h3>
+
+                    <p>
+                        Learn how to transform a simple top into a
+                        beautiful hand-painted fashion piece.
+                    </p>
+
+                    <button class="view-tutorial">
+                        View Tutorial
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tutorial 2 -->
+
+            <div class="tutorial-card" data-category="painting">
+
+                <div class="tutorial-image">
+                    <img src="images/art/painting-tutorial.jpg"
+                         alt="Painting Tutorial">
+
+                    <span class="difficulty beginner">
+                        Beginner
+                    </span>
+                </div>
+
+                <div class="tutorial-content">
+
+                    <span class="tutorial-category">
+                        Painting
+                    </span>
+
+                    <h3>Basic Fabric Painting</h3>
+
+                    <p>
+                        Discover simple fabric painting techniques
+                        and create your own colorful designs.
+                    </p>
+
+                    <button class="view-tutorial">
+                        View Tutorial
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tutorial 3 -->
+
+            <div class="tutorial-card" data-category="embroidery">
+
+                <div class="tutorial-image">
+                    <img src="images/art/embroidery-tutorial.jpg"
+                         alt="Embroidery Tutorial">
+
+                    <span class="difficulty intermediate">
+                        Intermediate
+                    </span>
+                </div>
+
+                <div class="tutorial-content">
+
+                    <span class="tutorial-category">
+                        Embroidery
+                    </span>
+
+                    <h3>Creative Embroidery Patterns</h3>
+
+                    <p>
+                        Learn simple embroidery patterns that can
+                        enhance your clothes and fabric artwork.
+                    </p>
+
+                    <button class="view-tutorial">
+                        View Tutorial
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tutorial 4 -->
+
+            <div class="tutorial-card" data-category="mirror">
+
+                <div class="tutorial-image">
+                    <img src="images/art/mirror-tutorial.jpg"
+                         alt="Mirror Work Tutorial">
+
+                    <span class="difficulty intermediate">
+                        Intermediate
+                    </span>
+                </div>
+
+                <div class="tutorial-content">
+
+                    <span class="tutorial-category">
+                        Mirror Work
+                    </span>
+
+                    <h3>Traditional Mirror Work</h3>
+
+                    <p>
+                        Explore traditional mirror work and learn
+                        how to add decorative details to fabric.
+                    </p>
+
+                    <button class="view-tutorial">
+                        View Tutorial
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tutorial 5 -->
+
+            <div class="tutorial-card" data-category="fabric">
+
+                <div class="tutorial-image">
+                    <img src="images/art/fabric-tutorial.jpg"
+                         alt="Fabric Art Tutorial">
+
+                    <span class="difficulty beginner">
+                        Beginner
+                    </span>
+                </div>
+
+                <div class="tutorial-content">
+
+                    <span class="tutorial-category">
+                        Fabric Art
+                    </span>
+
+                    <h3>Creative Fabric Art</h3>
+
+                    <p>
+                        Turn ordinary fabric into creative artwork
+                        using simple DIY techniques.
+                    </p>
+
+                    <button class="view-tutorial">
+                        View Tutorial
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Tutorial 6 -->
+
+            <div class="tutorial-card" data-category="fashion">
+
+                <div class="tutorial-image">
+                    <img src="images/art/fashion-tutorial.jpg"
+                         alt="Fashion DIY Tutorial">
+
+                    <span class="difficulty advanced">
+                        Advanced
+                    </span>
+                </div>
+
+                <div class="tutorial-content">
+
+                    <span class="tutorial-category">
+                        Fashion DIY
+                    </span>
+
+                    <h3>DIY Fashion Transformation</h3>
+
+                    <p>
+                        Learn how to transform simple clothing into
+                        unique and creative fashion designs.
+                    </p>
+
+                    <button class="view-tutorial">
+                        View Tutorial
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SHARE YOUR ARTWORK ================= -->
+
+    <section class="upload-section">
+
+        <div class="upload-container">
+
+            <div class="upload-info">
+
+                <span>SHOW YOUR CREATIVITY</span>
+
+                <h2>Share Your Artwork</h2>
+
+                <p>
+                    Have you created something beautiful?
+                    Share your artwork with the Infinite-Artixa community.
+                </p>
+
+                <div class="upload-features">
+
+                    <div>
+                        <i class="fa-solid fa-image"></i>
+                        <span>Upload artwork images</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-tags"></i>
+                        <span>Select an artwork category</span>
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-users"></i>
+                        <span>Inspire other creators</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Upload Form -->
+
+            <form id="artworkForm" class="artwork-form">
+
+                <div class="form-group">
+
+                    <label for="artistName">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="artistName"
+                        placeholder="Enter your name"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="artworkTitle">
+                        Artwork Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="artworkTitle"
+                        placeholder="Give your artwork a title"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="artworkCategory">
+                        Category
+                    </label>
+
+                    <select id="artworkCategory" required>
+
+                        <option value="">
+                            Select category
+                        </option>
+
+                        <option value="Clothing Design">
+                            Clothing Design
+                        </option>
+
+                        <option value="Painting">
+                            Painting
+                        </option>
+
+                        <option value="Embroidery">
+                            Embroidery
+                        </option>
+
+                        <option value="Mirror Work">
+                            Mirror Work
+                        </option>
+
+                        <option value="Fabric Art">
+                            Fabric Art
+                        </option>
+
+                        <option value="Fashion DIY">
+                            Fashion DIY
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="artworkDescription">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="artworkDescription"
+                        rows="4"
+                        placeholder="Tell us something about your artwork..."
+                        required></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="artworkImage">
+                        Upload Artwork
+                    </label>
+
+                    <input
+                        type="file"
+                        id="artworkImage"
+                        accept="image/*"
+                        required>
+
+                </div>
+
+
+                <!-- Image Preview -->
+
+                <div id="imagePreview" class="image-preview">
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    <p>
+                        Your image preview will appear here
+                    </p>
+
+                </div>
+
+
+                <button type="submit" class="upload-btn">
+
+                    <i class="fa-solid fa-upload"></i>
+
+                    Share Artwork
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SAMPLE ARTWORK GALLERY ================= -->
+
+    <section class="gallery-section">
+
+        <div class="section-heading">
+
+            <span>COMMUNITY CREATIONS</span>
+
+            <h2>Artwork Gallery</h2>
+
+            <p>
+                Get inspired by artwork created and shared by artists.
+            </p>
+
+        </div>
+
+
+        <div id="artworkGallery" class="artwork-grid">
+
+
+            <!-- Artwork 1 -->
+
+            <div class="artwork-card">
+
+                <img src="images/art/sample1.jpg"
+                     alt="Floral Clothing Design">
+
+                <div class="artwork-details">
+
+                    <span>Clothing Design</span>
+
+                    <h3>Floral Dream</h3>
+
+                    <p>
+                        Beautiful floral design painted on fabric.
+                    </p>
+
+                    <small>
+                        By Anushka
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Artwork 2 -->
+
+            <div class="artwork-card">
+
+                <img src="images/art/sample2.jpg"
+                     alt="Traditional Embroidery">
+
+                <div class="artwork-details">
+
+                    <span>Embroidery</span>
+
+                    <h3>Traditional Threads</h3>
+
+                    <p>
+                        Handcrafted embroidery artwork.
+                    </p>
+
+                    <small>
+                        By Creative Artist
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Artwork 3 -->
+
+            <div class="artwork-card">
+
+                <img src="images/art/sample3.jpg"
+                     alt="Mirror Work Artwork">
+
+                <div class="artwork-details">
+
+                    <span>Mirror Work</span>
+
+                    <h3>Mirror Magic</h3>
+
+                    <p>
+                        Traditional mirror work with a modern style.
+                    </p>
+
+                    <small>
+                        By Art Lover
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Artwork 4 -->
+
+            <div class="artwork-card">
+
+                <img src="images/art/sample4.jpg"
+                     alt="Fabric Art">
+
+                <div class="artwork-details">
+
+                    <span>Fabric Art</span>
+
+                    <h3>Creative Fabric</h3>
+
+                    <p>
+                        A unique fabric artwork created by hand.
+                    </p>
+
+                    <small>
+                        By Fashion Creator
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 Infinite-Artixa. Create. Inspire. Share.
+        </p>
+
+    </footer>
+
+
+    <!-- Tutorial JavaScript -->
+
+    <script src="js/tutorial.js"></script>
+
+</body>
+</html>
+```
