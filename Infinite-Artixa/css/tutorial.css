@@ -1,0 +1,560 @@
+css
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #101010;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    min-height: 75px;
+    padding: 15px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #151515;
+    border-bottom: 1px solid #292929;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-section img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.logo-section span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #cfcfcf;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn,
+.register-btn {
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+.login-btn {
+    border: 1px solid #444;
+}
+
+.register-btn {
+    background: #ffffff;
+    color: #111;
+}
+
+
+/* ================= HERO ================= */
+
+.tutorial-hero {
+    min-height: 390px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+    background:
+        radial-gradient(circle at center, #252525 0%, #101010 65%);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-tag {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #444;
+    border-radius: 30px;
+    color: #cccccc;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: clamp(38px, 6vw, 65px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #bdbdbd;
+}
+
+.hero-content p {
+    color: #a9a9a9;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+
+/* ================= SECTION HEADING ================= */
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 45px;
+}
+
+.section-heading span,
+.upload-info > span {
+    color: #999999;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.section-heading p {
+    color: #999999;
+    line-height: 1.7;
+}
+
+
+/* ================= CATEGORIES ================= */
+
+.categories-section {
+    padding: 80px 6% 40px;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.category-btn {
+    padding: 11px 18px;
+    border: 1px solid #353535;
+    background: #171717;
+    color: #bdbdbd;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category-btn i {
+    margin-right: 7px;
+}
+
+.category-btn:hover,
+.category-btn.active {
+    background: #ffffff;
+    color: #111111;
+}
+
+
+/* ================= TUTORIALS ================= */
+
+.tutorial-section {
+    padding: 50px 6% 90px;
+}
+
+.tutorial-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tutorial-card {
+    background: #171717;
+    border: 1px solid #292929;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.tutorial-card:hover {
+    transform: translateY(-6px);
+    border-color: #555;
+}
+
+.tutorial-image {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tutorial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.difficulty {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.tutorial-content {
+    padding: 22px;
+}
+
+.tutorial-category {
+    font-size: 11px;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tutorial-content h3 {
+    margin: 8px 0 10px;
+    font-size: 19px;
+}
+
+.tutorial-content p {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.view-tutorial {
+    margin-top: 18px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.view-tutorial i {
+    margin-left: 7px;
+    transition: 0.3s;
+}
+
+.view-tutorial:hover i {
+    transform: translateX(5px);
+}
+
+
+/* ================= UPLOAD SECTION ================= */
+
+.upload-section {
+    padding: 90px 6%;
+    background: #151515;
+    border-top: 1px solid #242424;
+    border-bottom: 1px solid #242424;
+}
+
+.upload-container {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.upload-info h2 {
+    font-size: 40px;
+    margin: 10px 0 20px;
+}
+
+.upload-info > p {
+    color: #999;
+    line-height: 1.8;
+}
+
+.upload-features {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.upload-features div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.upload-features i {
+    width: 38px;
+    height: 38px;
+    border: 1px solid #444;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ================= FORM ================= */
+
+.artwork-form {
+    background: #101010;
+    padding: 30px;
+    border: 1px solid #292929;
+    border-radius: 12px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #d1d1d1;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    background: #181818;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #ffffff;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #777;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input[type="file"] {
+    padding: 10px;
+}
+
+
+/* ================= IMAGE PREVIEW ================= */
+
+.image-preview {
+    min-height: 180px;
+    border: 1px dashed #444;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    color: #777;
+}
+
+.image-preview i {
+    font-size: 35px;
+}
+
+.image-preview img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+
+/* ================= UPLOAD BUTTON ================= */
+
+.upload-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #111;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.upload-btn:hover {
+    background: #d7d7d7;
+}
+
+
+/* ================= ARTWORK GALLERY ================= */
+
+.gallery-section {
+    padding: 90px 6%;
+}
+
+.artwork-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.artwork-card {
+    background: #171717;
+    border: 1px solid #292929;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.artwork-card:hover {
+    transform: translateY(-5px);
+}
+
+.artwork-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.artwork-details {
+    padding: 18px;
+}
+
+.artwork-details span {
+    font-size: 11px;
+    color: #999;
+    text-transform: uppercase;
+}
+
+.artwork-details h3 {
+    margin: 6px 0;
+    font-size: 17px;
+}
+
+.artwork-details p {
+    font-size: 12px;
+    color: #999;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.artwork-details small {
+    color: #ccc;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #292929;
+    color: #777;
+    font-size: 12px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .tutorial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .artwork-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .upload-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tutorial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artwork-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .upload-info h2 {
+        font-size: 32px;
+    }
+}
