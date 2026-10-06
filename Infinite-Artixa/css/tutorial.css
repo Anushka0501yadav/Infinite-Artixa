@@ -86,6 +86,15 @@ select {
     padding: 8px 18px;
     border-radius: 6px;
     font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.nav-buttons i {
+    flex: 0 0 auto;
 }
 
 .login-btn {
