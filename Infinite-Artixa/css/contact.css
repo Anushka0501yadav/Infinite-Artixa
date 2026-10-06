@@ -1,0 +1,1086 @@
+css
+/* =========================================
+   INFINITE-ARTIXA - CONTACT PAGE
+   ========================================= */
+
+
+/* ---------- Global ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+
+.navbar {
+    width: 100%;
+    min-height: 75px;
+
+    padding: 15px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #111111;
+
+    border-bottom: 1px solid #2b2b2b;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Navigation */
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar nav a {
+    position: relative;
+
+    color: #aaaaaa;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #ffffff;
+}
+
+
+/* Navigation underline */
+
+.navbar nav a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: -7px;
+
+    width: 0;
+    height: 2px;
+
+    background: #ffffff;
+
+    transition: 0.3s ease;
+}
+
+.navbar nav a:hover::after,
+.navbar nav a.active::after {
+    width: 100%;
+}
+
+
+/* Login/Register */
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-btn,
+.register-btn {
+    padding: 8px 18px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    transition: 0.3s ease;
+}
+
+.login-btn {
+    border: 1px solid #555555;
+}
+
+.login-btn:hover {
+    background: #222222;
+}
+
+.register-btn {
+    background: #ffffff;
+    color: #111111;
+}
+
+.register-btn:hover {
+    background: #dddddd;
+}
+
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.contact-hero {
+    min-height: 430px;
+
+    padding: 80px 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    background:
+        radial-gradient(
+            circle at 80% 50%,
+            #292929 0%,
+            #111111 35%,
+            #0d0d0d 70%
+        );
+}
+
+
+.contact-hero-content {
+    max-width: 700px;
+}
+
+
+.small-heading {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #999999;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 3px;
+}
+
+
+.contact-hero h1 {
+    font-size: clamp(38px, 5vw, 62px);
+
+    line-height: 1.15;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+
+.contact-hero h1 span {
+    color: #999999;
+}
+
+
+.contact-hero p {
+    max-width: 600px;
+
+    color: #aaaaaa;
+
+    font-size: 16px;
+}
+
+
+/* Hero icon */
+
+.hero-icon {
+    width: 220px;
+    height: 220px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #333333;
+
+    border-radius: 50%;
+
+    background: #151515;
+
+    box-shadow:
+        0 0 60px rgba(255, 255, 255, 0.04);
+}
+
+
+.hero-icon i {
+    font-size: 80px;
+
+    color: #888888;
+}
+
+
+/* =========================================
+   CONTACT SECTION
+   ========================================= */
+
+.contact-section {
+    padding: 90px 10%;
+
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 70px;
+
+    background: #101010;
+}
+
+
+/* Section tag */
+
+.section-tag {
+    display: inline-block;
+
+    margin-bottom: 12px;
+
+    color: #888888;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 2.5px;
+}
+
+
+/* Contact information */
+
+.contact-info h2,
+.contact-form-container h2 {
+    font-size: clamp(28px, 3vw, 40px);
+
+    line-height: 1.2;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+}
+
+
+.intro-text {
+    color: #999999;
+
+    font-size: 14px;
+
+    margin-bottom: 35px;
+
+    max-width: 520px;
+}
+
+
+/* Information item */
+
+.info-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 18px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #292929;
+}
+
+
+.info-icon {
+    min-width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #202020;
+
+    border: 1px solid #383838;
+
+    color: #ffffff;
+
+    font-size: 19px;
+}
+
+
+.info-item h3 {
+    font-size: 16px;
+
+    font-weight: 500;
+
+    margin-bottom: 5px;
+}
+
+
+.info-item p {
+    color: #888888;
+
+    font-size: 13px;
+}
+
+
+/* Social */
+
+.social-section {
+    margin-top: 30px;
+}
+
+
+.social-section h3 {
+    font-size: 15px;
+
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+
+.social-icons {
+    display: flex;
+
+    gap: 12px;
+}
+
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #353535;
+
+    border-radius: 8px;
+
+    color: #aaaaaa;
+
+    background: #161616;
+
+    transition: 0.3s ease;
+}
+
+
+.social-icons a:hover {
+    color: #ffffff;
+
+    background: #252525;
+
+    border-color: #666666;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================================
+   CONTACT FORM
+   ========================================= */
+
+.contact-form-container {
+    padding: 40px;
+
+    border: 1px solid #303030;
+
+    border-radius: 15px;
+
+    background: #151515;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+.form-header p {
+    color: #888888;
+
+    font-size: 13px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Form group */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #dddddd;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    background: #0e0e0e;
+
+    color: #ffffff;
+
+    border: 1px solid #333333;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+
+    transition: 0.3s ease;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 140px;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #666666;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #777777;
+
+    background: #111111;
+
+    box-shadow:
+        0 0 0 2px rgba(255, 255, 255, 0.03);
+}
+
+
+/* Send button */
+
+.send-btn {
+    width: 100%;
+
+    padding: 13px 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+.send-btn:hover {
+    background: #dddddd;
+
+    transform: translateY(-2px);
+}
+
+
+.send-btn i {
+    transition: 0.3s ease;
+}
+
+
+.send-btn:hover i {
+    transform: translateX(5px);
+}
+
+
+/* Form message */
+
+.form-message {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-size: 13px;
+
+    min-height: 20px;
+}
+
+
+/* =========================================
+   FAQ
+   ========================================= */
+
+.faq-section {
+    padding: 90px 10%;
+
+    background: #0d0d0d;
+}
+
+
+.section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    text-align: center;
+}
+
+
+.section-heading h2 {
+    font-size: clamp(28px, 4vw, 42px);
+
+    font-weight: 600;
+
+    margin-bottom: 15px;
+}
+
+
+.section-heading p {
+    color: #888888;
+
+    font-size: 14px;
+}
+
+
+.faq-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+.faq-card {
+    padding: 28px;
+
+    background: #151515;
+
+    border: 1px solid #2c2c2c;
+
+    border-radius: 10px;
+
+    transition: 0.3s ease;
+}
+
+
+.faq-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #555555;
+
+    background: #191919;
+}
+
+
+.faq-card h3 {
+    font-size: 16px;
+
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+
+.faq-card p {
+    color: #888888;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   CTA
+   ========================================= */
+
+.cta-section {
+    padding: 90px 10%;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #222222,
+            #0d0d0d 65%
+        );
+}
+
+
+.cta-section h2 {
+    font-size: clamp(28px, 4vw, 42px);
+
+    margin-bottom: 15px;
+}
+
+
+.cta-section p {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    color: #888888;
+
+    font-size: 14px;
+}
+
+
+.cta-buttons {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+.primary-btn,
+.secondary-btn {
+    padding: 12px 25px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+
+.primary-btn {
+    background: #ffffff;
+
+    color: #111111;
+}
+
+
+.primary-btn:hover {
+    background: #dddddd;
+
+    transform: translateY(-3px);
+}
+
+
+.secondary-btn {
+    border: 1px solid #555555;
+
+    color: #ffffff;
+}
+
+
+.secondary-btn:hover {
+    background: #222222;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background: #090909;
+
+    border-top: 1px solid #252525;
+
+    padding: 55px 10% 20px;
+}
+
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 60px;
+
+    padding-bottom: 40px;
+}
+
+
+.footer-logo {
+    max-width: 350px;
+}
+
+
+.footer-logo img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+
+    margin-bottom: 10px;
+}
+
+
+.footer-logo h3 {
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+
+.footer-logo p {
+    color: #777777;
+
+    font-size: 13px;
+}
+
+
+.footer-links {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+
+.footer-links h4 {
+    font-size: 15px;
+
+    margin-bottom: 8px;
+}
+
+
+.footer-links a {
+    color: #777777;
+
+    font-size: 13px;
+
+    transition: 0.3s ease;
+}
+
+
+.footer-links a:hover {
+    color: #ffffff;
+
+    padding-left: 4px;
+}
+
+
+.footer-bottom {
+    padding-top: 20px;
+
+    border-top: 1px solid #222222;
+
+    text-align: center;
+}
+
+
+.footer-bottom p {
+    color: #555555;
+
+    font-size: 12px;
+}
+
+
+/* =========================================
+   RESPONSIVE - TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar nav {
+        gap: 16px;
+    }
+
+    .contact-hero {
+        padding: 70px 7%;
+    }
+
+    .contact-section,
+    .faq-section,
+    .cta-section {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+}
+
+
+/* =========================================
+   RESPONSIVE - MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    /* Navbar */
+
+    .navbar {
+        padding: 12px 5%;
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .logo span {
+        font-size: 17px;
+    }
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar nav {
+        width: 100%;
+
+        order: 3;
+
+        justify-content: center;
+
+        gap: 14px;
+
+        overflow-x: auto;
+    }
+
+    .navbar nav a {
+        font-size: 11px;
+
+        white-space: nowrap;
+    }
+
+    .nav-buttons {
+        gap: 6px;
+    }
+
+    .login-btn,
+    .register-btn {
+        padding: 7px 12px;
+
+        font-size: 11px;
+    }
+
+
+    /* Hero */
+
+    .contact-hero {
+        min-height: auto;
+
+        padding: 65px 6%;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .contact-hero p {
+        font-size: 14px;
+    }
+
+    .hero-icon {
+        width: 170px;
+        height: 170px;
+    }
+
+    .hero-icon i {
+        font-size: 60px;
+    }
+
+
+    /* Contact */
+
+    .contact-section {
+        padding: 65px 6%;
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .intro-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .info-item {
+        text-align: left;
+    }
+
+
+    /* Form */
+
+    .contact-form-container {
+        padding: 25px 20px;
+    }
+
+
+    /* FAQ */
+
+    .faq-section {
+        padding: 65px 6%;
+    }
+
+    .faq-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* CTA */
+
+    .cta-section {
+        padding: 65px 6%;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+
+        max-width: 250px;
+
+        text-align: center;
+    }
+
+
+    /* Footer */
+
+    footer {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 35px;
+    }
+
+    .footer-logo {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    .navbar nav {
+        gap: 10px;
+    }
+
+    .navbar nav a {
+        font-size: 10px;
+    }
+
+    .contact-hero h1 {
+        font-size: 34px;
+    }
+
+    .faq-card {
+        padding: 22px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-logo {
+        grid-column: auto;
+    }
+
+}
+
