@@ -128,35 +128,40 @@ a {
 .nav-buttons {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
+    flex-shrink: 0;
 }
 
 .login-btn,
 .register-btn {
-    padding: 8px 18px;
-
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 12px;
     border-radius: 6px;
-
     font-size: 13px;
-
-    transition: 0.3s ease;
+    text-decoration: none;
+    white-space: nowrap;
+    box-sizing: border-box;
 }
 
 .login-btn {
-    border: 1px solid #555555;
-}
-
-.login-btn:hover {
-    background: #222222;
+    border: 1px solid #555;
 }
 
 .register-btn {
-    background: #ffffff;
-    color: #111111;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+
+.login-btn:hover {
+    background: #222;
 }
 
 .register-btn:hover {
-    background: #dddddd;
+    background: #fff;
+    color: #000;
 }
 
 
@@ -1083,4 +1088,3 @@ footer {
     }
 
 }
-
